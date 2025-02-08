@@ -1,0 +1,126 @@
+/* General Styling*/
+
+body {
+    font-family: 'Aerial' , sans-serif;
+    background-color: #e3f2fd;
+    margin: 0;
+    padding: 150px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Left Section Styling*/
+
+.Left-section {
+    background-color: #1e3a8a;
+    color: white;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+    border-right: 5px solid #facc15;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid #facc15;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h3 {
+    font-size: 24px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #facc15;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;    
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li:hover {
+    transform: translateX(10px);
+}
+
+/* Right section styling*/
+
+.right-section {
+    padding: 20px;
+    width: 65%;    
+    animation: fadeInRight 1s ease-in-out;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    background-color: #facc15;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover { 
+    background-color: #ffb300;
+    box-shadow: 0 0 20px rgba(255, 179, 0, 0.6);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    from { transform: translateX(-30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeInRight {
+    from { transform: translateX(30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
