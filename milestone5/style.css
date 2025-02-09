@@ -1,0 +1,179 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #fff4d9, #9c9a93);
+    color: #333;
+}
+
+/* Form Container */
+form {
+    margin: 50px auto;
+    background: rgb(224, 216, 231);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    max-width: 600px;
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #0947aa; /* Dark Blue */
+}
+
+h3 {
+    color: #0947aa; /* Dark Blue */
+}
+
+/* Fieldset */
+fieldset {
+    border: 2px solid #0a1931;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: rgba(10, 25, 49, 0.07);
+    transition: all 0.3s ease-in-out;
+}
+
+fieldset:hover {
+    box-shadow: 0 4px 12px rgba(10, 25, 49, 0.4);
+}
+
+/* Legend */
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #06098a; /* Golden Yellow */
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #0a1931;
+}
+
+/* Inputs & Textareas */
+input, textarea {
+    margin-top: 4px;
+    padding: 10px;
+    width: calc(100% - 1px);
+    border: 2px solid #0a1931;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #f4a900;
+    box-shadow: 0 0 8px rgba(244, 169, 0, 0.5);
+    outline: none;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #0a1931, #1b2a49);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(10, 25, 49, 0.4);
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #1b2a49, #0a1931);
+    box-shadow: 0 6px 14px rgba(10, 25, 49, 0.5);
+    transform: translateY(-2px);
+}
+
+/* Resume Display - Adjust Layout */
+#resume-display {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    outline: none; /*This makes the resume editable*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Resume Headings & Content Layout */
+.resume-section {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(10, 25, 49, 0.2);
+}
+
+.resume-section h3 {
+    flex: 1;
+    color: #0a1931;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left; /* Move headings to the left */
+}
+
+.resume-section p {
+    flex: 3;
+    font-size: 16px;
+    color: #333;
+    text-align: left; /* Keep content aligned properly */
+}
+
+/* Last section should not have a border */
+.resume-section:last-child {
+    border-bottom: none;
+}
+
+#back-to-form {
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #0b08d3, #1e045a);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(10, 25, 49, 0.4);
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#back-to-form:hover {
+    background: linear-gradient(90deg, #dd120b, #8d4fbe);
+    box-shadow: 0 6px 14px rgba(10, 25, 49, 0.5);
+    transform: translateY(-2px);
+}
+
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
